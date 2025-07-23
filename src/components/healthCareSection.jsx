@@ -15,7 +15,8 @@ export default function HealthcareSection() {
       title: "Symptom Checker",
       description:
         "Check your symptoms instantly and get quick advice. Helps you understand potential causes.",
-      bgColor: "bg-sky-200",
+      bgColor: "bg-sky-50",
+      bordercolor:"border-sky-200",
     },
     {
       id: 2,
@@ -23,7 +24,8 @@ export default function HealthcareSection() {
       title: "Find Doctors",
       description:
         "Locate verified doctors nearby by specialty. Get connected easily.",
-      bgColor: "bg-purple-100",
+      bgColor: "bg-purple-50",
+      bordercolor:"border-purple-200",
     },
     {
       id: 3,
@@ -31,7 +33,8 @@ export default function HealthcareSection() {
       title: "Health Reminders",
       description:
         "Set reminders for medications and check-ups. Stay on top of your health routine.",
-      bgColor: "bg-green-100",
+      bgColor: "bg-green-50",
+      bordercolor:"border-green-200",
      
     },
     {
@@ -40,7 +43,8 @@ export default function HealthcareSection() {
       title: "Private Consultation",
       description:
         "Book private sessions with certified professionals. 100% confidential.",
-      bgColor: "bg-pink-200",
+      bgColor: "bg-indigo-50",
+      bordercolor:"border-indigo-200",
      
     },
     {
@@ -49,7 +53,8 @@ export default function HealthcareSection() {
       title: "Cost Information",
       description:
         "Transparent pricing for medical services. Know what you pay before you visit.",
-      bgColor: "bg-orange-100",
+      bgColor: "bg-orange-50",
+      bordercolor:"border-orange-200",
       
     },
     {
@@ -58,7 +63,8 @@ export default function HealthcareSection() {
       title: "Disease Alerts",
       description:
         "Get real-time alerts on disease outbreaks and health advisories in your area.",
-      bgColor: "bg-red-100",
+      bgColor: "bg-red-50",
+      bordercolor:"border-red-200",
     },
   ];
 
@@ -82,7 +88,7 @@ export default function HealthcareSection() {
           {healthcareServices.map((service) => (
             <div
               key={service.id}
-              className={`${service.bgColor}  rounded-2xl p-8  transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer`}
+              className={`${service.bgColor} border ${service.bordercolor}  rounded-2xl p-8  transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer`}
             >
               
               {/* Icon */}
