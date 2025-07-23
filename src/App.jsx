@@ -1,4 +1,5 @@
 import DoctorsSection from './components/doctorsSection'
+import FooterSection from './components/footerSection'
 import HealthAlertsSection from './components/healthAlertsSections'
 import HealthcareSection from './components/healthCareSection'
 import HeroSection from './components/heroSection'
@@ -16,6 +17,7 @@ export default function App() {
      <DoctorsSection/>
      <PatientSection/>
      <HealthAlertsSection/>
+     <FooterSection/>
 
     </div>
   )

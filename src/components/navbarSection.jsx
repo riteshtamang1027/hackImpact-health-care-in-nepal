@@ -2,8 +2,7 @@ import { Bell, Menu, Search, User, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import MobileNavbarSection from "./mobileNavbarSection";
-// import { Button } from "@/components/ui/button"
-// import { Input } from "@/components/ui/input"
+
 
 export default function NavbarSection() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
