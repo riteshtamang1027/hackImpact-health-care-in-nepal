@@ -2,6 +2,7 @@ import DoctorsSection from './components/doctorsSection'
 import HealthcareSection from './components/healthCareSection'
 import HeroSection from './components/heroSection'
 import NavbarSection from './components/navbarSection'
+import PatientSection from './components/patientSection'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
      <HeroSection/>
      <HealthcareSection/>
      <DoctorsSection/>
+     <PatientSection/>
 
     </div>
   )
