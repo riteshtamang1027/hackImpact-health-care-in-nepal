@@ -1,9 +1,12 @@
+import HeroSection from './components/heroSection'
 import NavbarSection from './components/navbarSection'
 
 export default function App() {
   return (
-    <div className='text-3xl font-bold'>
+    <div className=''>
      <NavbarSection/>
+     <HeroSection/>
+
     </div>
   )
 }
