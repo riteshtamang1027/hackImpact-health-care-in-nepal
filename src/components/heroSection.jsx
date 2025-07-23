@@ -1,8 +1,6 @@
-"use client";
-
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[94vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat "
@@ -30,10 +28,10 @@ export default function HeroSection() {
               and dedicated healthcare professionals.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200">
+              <button className="bg-blue-600 border-2 border-white hover:border-blue-600 hover:bg-white text-white hover:text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200 cursor-pointer">
                 Book Appointment
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200">
+              <button className="border-2 border-white hover:border-blue-600 text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 cursor-pointer">
                 Learn More
               </button>
             </div>

@@ -1,11 +1,17 @@
+import DoctorsSection from './components/doctorsSection'
+import HealthcareSection from './components/healthCareSection'
 import HeroSection from './components/heroSection'
 import NavbarSection from './components/navbarSection'
 
 export default function App() {
   return (
     <div className=''>
-     <NavbarSection/>
+     <div className='sticky top-0 z-50'>
+      <NavbarSection/>
+     </div>
      <HeroSection/>
+     <HealthcareSection/>
+     <DoctorsSection/>
 
     </div>
   )
