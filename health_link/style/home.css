@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6%;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 40%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    url("doctor-bg.jpg");
+  background-size: cover;
+  background-position: right center;
+  height: 80vh;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-text .highlight {
+  color: #2b70d8;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Image */
+.hero-image {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blur-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 40%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 40%
+  );
+  pointer-events: none;
+}
+
+.btn-primary {
+  background-color: #2b70d8;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid #2b70d8;
+  color: #2b70d8;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Doctors Section */
+.doctors {
+  padding: 4rem 6%;
+  text-align: center;
+  background-color: #f9fafc;
+}
+
+.doctor-cards {
+  display: flex;
+}
+
+.doctor-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-info h3 {
+  margin: 0;
+  color: #2a2a2a;
+}
+
+.specialty {
+  color: #007bff;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.experience {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #fbc02d;
+}
+
+.reviews {
+  color: #555;
+  margin-left: 5px;
+}
+
+.availability,
+.fee {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.view-btn,
+.book-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.book-btn {
+  background: #0056d2;
+  color: #fff;
+}
+/* Appointment Section */
+.appointment {
+  padding: 4rem 6%;
+  background: #fff;
+  text-align: center;
+}
+
+.appointment-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 6%;
+  background-color: #f5f8fb;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box img {
+  width: 60px;
+  height: 60px;
+  margin: 23px;
+}
+
+.feature-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.feature-box p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .doctor-cards,
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
