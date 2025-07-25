@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-actions span {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.avatar {
+  background: #1e40af;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  height: 100px;
+}
+
+.profile-card .contact {
+  text-align: right;
+  font-size: 14px;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.stat-card h3 {
+  font-size: 16px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  margin: 0.5rem 0;
+}
+
+.stat-card.small {
+  font-size: 12px;
+  color: gray;
+}
+
+.blue { border-left: 5px solid #3b82f6; }
+.green { border-left: 5px solid #10b981; }
+.orange { border-left: 5px solid #f97316; }
+.purple { border-left: 5px solid #8b5cf6; }
+
+.main-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reminders, .appointments {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.reminders ul, .appointments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reminders li, .appointments li {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.confirmed { background: #d1fae5; color: #065f46; }
+.pending { background: #fef3c7; color: #92400e; }
+.rescheduled { background: #e0e7ff; color: #3730a3; }
+
+.bottom-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.patients, .quick-actions {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.patients input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.patients li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.quick-actions .actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.action {
+  padding: 1rem;
+  background: #f3f4f6;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.appointments img{
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+}

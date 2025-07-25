@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="doctor.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>HealthCare Dashboard</h1>
+    <div class="profile-actions">
+      <span>🔔</span>
+      <span>⚙️</span>
+      <span class="avatar">DJ</span>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="profile-card">
+      <img src="C:\Users\DELL\OneDrive\Desktop 1\health_care\Hackathon\Image\doctor1.jpg" alt="Doctor" />
+      <div>
+        <h2>Dr. Sarah Johnson</h2>
+        <p class="specialty">Cardiology Specialist</p>
+        <p>15 years experience</p>
+      </div>
+      <div class="contact">
+        <p>+1 (555) 123-4567</p>
+        <p>sarah.johnson@hospital.com</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card blue">
+        <h3>Today's Patients</h3>
+        <p>24</p>
+        <small>+3 from yesterday</small>
+      </div>
+      <div class="stat-card green">
+        <h3>Upcoming Appointments</h3>
+        <p>8</p>
+        <small>Next at 2:30 PM</small>
+      </div>
+      <div class="stat-card orange">
+        <h3>Pending Reports</h3>
+        <p>12</p>
+        <small>3 urgent reviews</small>
+      </div>
+      <div class="stat-card purple">
+        <h3>Medicine Reminders</h3>
+        <p>6</p>
+        <small>2 due today</small>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="reminders">
+        <div class="section-header">
+          <h3>Medicine Reminders</h3>
+          <button>+ Add Reminder</button>
+        </div>
+        <ul>
+          <li>Aspirin <span>75mg at 08:00</span> <input type="checkbox" checked /></li>
+          <li>Lisinopril <span>10mg at 12:00</span> <input type="checkbox" checked /></li>
+          <li>Metformin <span>500mg at 20:00</span> <input type="checkbox" /></li>
+        </ul>
+      </div>
+
+      <div class="appointments">
+        <div class="section-header">
+          <h3>Today's Appointments</h3>
+          <a href="#">View All</a>
+        </div>
+        <ul>
+          <li><img src="C:\Users\DELL\OneDrive\Desktop 1\health_care\Hackathon\Image\doctor1.jpg" /> John Smith - 09:00 AM <span class="status confirmed">confirmed</span></li>
+          <li><img src="C:\Users\DELL\OneDrive\Desktop 1\health_care\Hackathon\Image\doctor1.jpg" /> Emily Davis - 10:30 AM <span class="status pending">pending</span></li>
+          <li><img src="C:\Users\DELL\OneDrive\Desktop 1\health_care\Hackathon\Image\doctor1.jpg" /> Michael Brown - 02:30 PM <span class="status confirmed">confirmed</span></li>
+          <li><img src="C:\Users\DELL\OneDrive\Desktop 1\health_care\Hackathon\Image\doctor1.jpg" /> Sarah Wilson - 04:00 PM <span class="status rescheduled">rescheduled</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <div class="patients">
+        <div class="section-header">
+          <h3>Patient Management</h3>
+          <button>+ Add Patient</button>
+        </div>
+        <input type="text" placeholder="Search patients..." />
+        <ul>
+          <li><img src="https://via.placeholder.com/30" /> John Smith - Hypertension, 45 yrs <span>📅 2024-01-15</span></li>
+          <li><img src="https://via.placeholder.com/30" /> Emily Davis - Diabetes, 32 yrs <span>📅 2024-01-10</span></li>
+          <li><img src="https://via.placeholder.com/30" /> Michael Brown - Arthritis, 67 yrs <span>📅 2024-01-08</span></li>
+        </ul>
+      </div>
+
+      <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <div class="actions-grid">
+          <div class="action">💊 E-Prescription</div>
+          <div class="action">🧠 AI Symptom Checker</div>
+          <div class="action">💬 Patient Chat</div>
+          <div class="action">📝 Notes & Records</div>
+          <div class="action">📊 Analytics</div>
+          <div class="action">☁️ Cloud Storage</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
