@@ -152,11 +152,6 @@ body {
   color: #333;
 }
 
-.book-btn {
-  background: #0056d2;
-  color: #fff;
-}
-
 
 /* Pagination section */
 .pagination {
@@ -187,4 +182,23 @@ body {
   background-color: #0052cc;
   color: white;
   border: none;
+}
+
+.book-btn {
+  display: inline-block;       /* Make it behave like a button */
+  background-color: #0052cc;   /* Blue background */
+  color: white;                /* White text */
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;       /* Remove underline */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #003e99;   /* Darker blue on hover */
+  transform: translateY(-2px);
 }
