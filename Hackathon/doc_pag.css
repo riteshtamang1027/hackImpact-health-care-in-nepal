@@ -125,7 +125,8 @@ body {
   margin-left: 5px;
 }
 
-.availability, .fee {
+.availability,
+.fee {
   font-size: 14px;
   margin: 5px 0;
   color: #333;
@@ -137,7 +138,8 @@ body {
   margin-top: 15px;
 }
 
-.view-btn, .book-btn {
+.view-btn,
+.book-btn {
   border: none;
   padding: 8px 12px;
   border-radius: 6px;
@@ -184,5 +186,5 @@ body {
 .page.active {
   background-color: #0052cc;
   color: white;
-  border:none;
+  border: none;
 }

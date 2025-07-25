@@ -11,37 +11,36 @@ body {
   background-color: #ffffff;
 }
 
+
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 4rem 6%;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.95) 40%,
-      rgba(255, 255, 255, 0) 80%
-    ),
-    url("doctor-bg.jpg");
+  height: 85vh;
+  color: #000;
+  background: linear-gradient(to right, white 40%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 75%),
+              url("home.jpg") no-repeat center center;
   background-size: cover;
-  background-position: right center;
-  height: 80vh;
+  overflow: hidden;
 }
 
-.hero-text {
+.hero-content {
   max-width: 600px;
+  z-index: 1;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
-.hero-text .highlight {
+.highlight {
   color: #2b70d8;
 }
 
-.hero-text p {
+.hero p {
   font-size: 1rem;
   margin-bottom: 2rem;
   color: #444;
@@ -50,40 +49,6 @@ body {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-}
-
-/* Image */
-.hero-image {
-  position: relative;
-  display: inline-block;
-  width: fit-content;
-  overflow: hidden;
-}
-
-.hero-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.blur-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  filter: blur(40px);
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 40%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 40%
-  );
-  pointer-events: none;
 }
 
 .btn-primary {
@@ -107,12 +72,12 @@ body {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 2rem;
     text-align: center;
     height: auto;
+    padding: 2rem;
   }
 
-  .hero-text h1 {
+  .hero h1 {
     font-size: 2rem;
   }
 
@@ -122,11 +87,12 @@ body {
   }
 }
 
+
 /* Doctors Section */
 .doctors {
   padding: 4rem 6%;
   text-align: center;
-  background-color: #f9fafc;
+  background-color: #d4e4f7;
 }
 
 .doctors h2 {
@@ -144,8 +110,10 @@ body {
 .doctor-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers the cards */
-  gap: 30px; /* creates spacing between cards */
+  justify-content: center;
+  /* centers the cards */
+  gap: 30px;
+  /* creates spacing between cards */
 }
 
 .doctor-card {
@@ -227,6 +195,7 @@ body {
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
+  margin: 0 5px;
 }
 
 .view-btn {
@@ -259,49 +228,96 @@ body {
 
 
 /* Appointment Section */
-.appointment {
-  padding: 4rem 6%;
-  background: #fff;
+.appointment-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
   text-align: center;
 }
 
+.appointment-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-section p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
 .appointment-form {
-  max-width: 700px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: #f9f9f9;
+  background: #fff;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
 .form-row {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.form-row.full {
+  flex-direction: column;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333;
 }
 
 input,
 select,
 textarea {
-  flex: 1;
-  padding: 0.8rem;
-  border-radius: 6px;
+  padding: 0.75rem 1rem;
   border: 1px solid #ccc;
+  border-radius: 6px;
   font-size: 1rem;
+  width: 100%;
 }
 
 textarea {
   resize: vertical;
-  min-height: 100px;
 }
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #2b70d8;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1f5db8;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
 
 /* Features Section */
 .features {
   padding: 4rem 6%;
-  background-color: #f5f8fb;
+  background-color: #d4e4f7;
   text-align: center;
 }
 
